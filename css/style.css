@@ -1,0 +1,931 @@
+
+body{
+    background: rgb(255, 255, 255);
+    font-family: sans-serif,arial,Helvetica;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.btn:focus,
+button:focus{
+    outline: none;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+h2.page-heading{
+  margin: 5px 0 30px;
+  padding: 0 5px 10px;
+  border-bottom: 2px solid #333;
+}
+/*Admin css start from here*/
+
+#wrapper-admin{
+    padding: 100px 0 0;
+}
+
+img.logo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#header-admin{
+    background-color: #06e0d1;
+    padding: 15px 0;
+}
+
+#header-admin .admin-logout{
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#header-admin .admin-logout:hover{
+    text-decoration: underline;
+}
+
+#admin-menubar{
+    background-color: #fff;
+}
+#admin-menubar .admin-menu{
+    font-size: 0;
+}
+#admin-menubar .admin-menu li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+#admin-menubar .admin-menu li a{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    display: block;
+    transition: all 0.3s;
+}
+
+#admin-menubar .admin-menu li a:hover{
+    color: #fff;
+    background-color: #1E90FF;
+}
+
+#admin-content{
+    padding: 20px 0;
+    min-height: 750px;
+}
+
+#admin-content .admin-heading{
+    font-size: 35px;
+    margin: 0 0 15px;
+}
+
+#admin-content .add-new{
+    color: #fff;
+    background-color: #1E90FF;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    /* margin: 0 0 20px; */
+    display: block;
+    transition: all 0.3s;
+}
+#admin-content .add-new:hover{
+    text-shadow: 0 0 3px #000;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+}
+
+#admin-content .content-table{
+    border: 1px solid #000;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+#admin-content .content-table thead{
+    color: #fff;
+    background-color: #333;
+}
+
+#admin-content .content-table th{
+    padding: 10px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#admin-content .content-table tbody{
+    color: #333;
+}
+
+#admin-content .content-table tbody tr{
+    background-color: #e7e7e7;
+}
+#admin-content .content-table tbody tr:nth-child(even){
+    background-color: transparent;
+}
+#admin-content .content-table tbody td{
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+
+}
+
+#admin-content .content-table tbody td:nth-child(2){
+    text-align: left;
+}
+
+#admin-content .admin-pagination{
+    margin: 0;
+}
+#admin-content .admin-pagination li a{
+    display: block;
+}
+
+.id,
+.edit,
+.delete{
+    text-align:center;
+}
+
+form{
+    background: #06e0d1;
+    padding: 25px;
+    box-shadow:0 1px 3px rgba(79, 161, 138, 0.733);
+}
+/* End Admin Pannel */
+
+/* FrontEnd Start from here */
+
+/* Header */
+#header{
+    background: #06e0d1;
+    text-align: center;
+    padding: 0.5px;
+}
+
+#logo{
+    display: inline-block;
+    width: 100%;
+}
+
+#logo img{
+    width: 100%;
+}
+
+/* Menubar */
+#menu-bar{
+    background: #333;
+    text-align: center;
+}
+
+#menu-bar .menu > li{
+    display: inline-block;
+}
+
+.menu > li > a{
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight:600;
+    transition:all 0.5s ease 0s;
+}
+
+#menu-bar .menu > li > a:hover,
+#menu-bar .menu > li > a.active{
+    color:#fff;
+    background:#1efcff;
+    ;
+}
+
+/* Main Content */
+#main-content{
+    padding: 30px 0;
+    min-height: 750px;
+}
+
+#main-content .post-container{
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#main-content .post-content{
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0 0 30px;
+    margin-bottom:30px;
+}
+
+#main-content .post-content img{
+  width: 100%;
+}
+
+#main-content .post-content .post-img{
+  border: 3px solid #e7e7e7;
+  display: block;
+  height: 145px;
+  overflow: hidden;
+  transition: border .3s;
+}
+#main-content .post-content .post-img:hover{
+  border: 3px solid #1e90ff;
+}
+#main-content .post-content .inner-content{
+    /* border: 1px solid #000; */
+}
+
+#main-content .post-content h3{
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 0 7px;
+
+}
+#main-content .post-content h3 a{
+    color: #1e90ff;
+    transition:all 0.3s;
+}
+#main-content .post-content h3 a:hover{
+    color:#333;
+}
+
+#main-content .post-content .post-information span{
+    color: #606060;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+}
+
+#main-content .post-content .post-information i{
+    color: #1e90ff;
+    margin-right: 1px;
+}
+
+#main-content .post-content .post-information a{
+    color: #606060;
+    text-decoration: none;
+}
+
+#main-content .post-content .post-information a:hover{
+    color: #333;
+    text-decoration: none;
+}
+
+#main-content .post-content p,
+#main-content .single-post p{
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin:0 0 10px;
+}
+
+#main-content .post-content a.read-more{
+    color: #fff;
+    background-color: #1E90FF;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 3px 8px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+#main-content .post-content a.read-more:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+#main-content .single-post{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#main-content .single-post h3{
+    color: #1e90ff;
+}
+
+#main-content .single-post .post-information{
+    margin: 0 0 10px;
+}
+#main-content .single-post p{
+    text-align: justify;
+}
+
+#main-content .single-post img.single-feature-image{
+    width: 70%;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid #e7e7e7;
+}
+
+/* Pagination */
+.pagination {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+.pagination li {
+    display:inline-block;
+    margin: 0 5px 0 0;
+}
+
+.pagination li a{
+    border: none;
+    background: #000305;
+    color: #fff;
+}
+
+.pagination li a:hover,
+.pagination > li > a:focus{
+    color:#fff;
+    background:#333;
+}
+
+.page_links {
+    background-color: #ccc;
+    font-family: arial, verdana;
+    font-size: 12px;
+    text-decoration: none;
+    border:1px solid #000;
+    padding: 6px;
+    margin: 3px;
+}
+
+#page_a_link{
+    font-size: 12px;
+    border:1px #000000 solid;
+    color:#000;
+    background-color: #cccccc;
+    padding: 6px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+i.fa{
+    color:#222;
+}
+
+/* Sidebar*/
+#sidebar h4{
+    color: #1A1A1A;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight:600;
+    text-transform: uppercase;
+    padding: 0 0 0 5px;
+    margin: 0 0 21px;
+    border-left: 3px solid #1e90ff;
+}
+
+#sidebar .search-box-container{
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 0 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#sidebar .search-post{
+    padding: 0;
+}
+#sidebar .search-post input{
+    color: #606060;
+}
+#sidebar .search-post input:focus{
+    box-shadow: none;
+    border-color: #999;
+}
+
+#sidebar .search-post .btn{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    background-color: #1E90FF;
+    border-color: #1E90FF;
+    outline: none;
+}
+
+#sidebar .search-post .btn:hover,
+#sidebar .search-post .btn:focus{
+    text-shadow: 0 0 3px #333;
+}
+
+#sidebar .search-post i.fa{
+    font-size: 16px;
+    color: #999999;
+    line-height: 40px;
+    float:right;
+}
+
+#sidebar .recent-post-container{
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#sidebar .recent-post{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+}
+
+#sidebar .recent-post:last-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#sidebar .recent-post .post-img{
+  display: inline-block;
+  width: 33%;
+  border: 3px solid rgba(0,0,0,0.3);
+  vertical-align: top;
+  transition: border .3s;
+}
+
+#sidebar .recent-post .post-img:hover{
+  border: 3px solid #1e90ff;
+}
+
+#sidebar .recent-post .post-img img{
+    width: 100%;
+}
+
+#sidebar .recent-post .post-content{
+    width: 65%;
+    display: inline-block;
+    border: none;
+    padding: 0 0 0 7px;
+    margin: 0;
+}
+
+#sidebar .recent-post h5{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 5px;
+}
+#sidebar .recent-post h5 a{
+    color: #1E90FF;
+}
+
+#sidebar .recent-post span{
+    color: #666;
+    font-size: 11px;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+}
+
+#sidebar .recent-post span a{
+    color: #666;
+}
+#sidebar .recent-post span i{
+    color: #1E90FF;
+}
+
+#sidebar .recent-post a.read-more{
+    color: #666;
+    background-color: rgba(0,0,0,0.09);
+    width: 65px;
+    font-size: 11px;
+    text-align: center;
+    padding: 0;
+    display: block;
+    transition: all 0.3s;
+}
+
+#sidebar .recent-post a.read-more:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Footer*/
+#footer{
+    color: #fff;
+    padding:14px 0;
+    text-align:center;
+    background-color:#06e0d1;
+}
+
+#footer  a{
+    color:#fff;
+}
+
+#footer  span  a:hover{
+    text-decoration: underline;
+}
+
+/*End front End*/
+
+/*Ticker sample here*/
+.news {
+    box-shadow: inset 0 -15px 30px rgba(17, 224, 239, 0.4), 0 5px 10px rgba(0,0,0,0.5);
+    width: 1300px;
+    height: 30px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 3px;
+    -webkit-user-select: none
+  }
+  .full-width{
+      width: 100%;
+  }
+  .news span {
+    float: cen;
+    color: #060000;
+    padding: 6px;
+    position: relative;
+    top: 1%;
+    border-radius: 4px;
+    box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4); 
+    font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    cursor: pointer
+  }
+  
+  .news ul {
+    float: left;
+    padding-left: 20px;
+    animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+    -webkit-user-select: none
+  }
+  
+  .news ul li {line-height: 30px; list-style: none }
+  
+  .news ul li a {
+    color: #fff;
+    text-decoration: none;
+    font: 14px Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none
+  }
+
+  @keyframes ticker {
+	0%   {margin-top: 0}
+	25%  {margin-top: -30px}
+	50%  {margin-top: -60px}
+	75%  {margin-top: -90px}
+	100% {margin-top: 0}
+}
+
+  /* Old Ticker css end here */
+
+
+
+  /*Quick links started from here*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#333; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:16px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:16px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:16px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+
+
+
+.footer_ul2_amrc {margin:8px; list-style-type:none; padding:0px; font-size: large;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 17px;}
+
+.social_footer_ul { display:table; margin:14px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:5px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#dc0b0b; border:1px solid #CCC; padding:8px;border-radius:30%;}
+.social_footer_ul li i {  width:20px; height:10px; text-align:center;}
+
+/* Credit to https://bootsnipp.com/snippets/bxDBA */
+
+/* (A) STANDARD ROW HEIGHT */
+.vwrap, .vitem {
+    height: 30px;
+    line-height: 30px;
+
+  }
+   
+  /* (B) FIXED WRAPPER */
+  .vwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+    background: #eee;
+  }
+  /* (C) TICKER ITEMS */
+  .vitem { text-align: center;}
+   
+  /* (D) ANIMATION - MOVE ITEMS FROM TOP TO BOTTOM */
+  /* CHANGE KEYFRAMES IF YOU ADD/REMOVE ITEMS */
+  .vmove { position: relative; }
+  @keyframes tickerv {
+    0% { margin-top: 0; } /* FIRST ITEM */
+    25% { margin-top: -30px; } /* SECOND ITEM */
+    50%{ margin-top: -60px; } /* THIRD ITEM */
+    75% { margin-top: -90px; } /* FORTH ITEM */
+    100% { margin-top: 0 } /* BACK TO FIRST */
+  }
+  .vmove {
+    animation-name: tickerv;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(10, 5, .1, 0);
+  }
+  .vmove:hover { animation-play-state: paused; }
+
+
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+
+
+
+  body{background: #eee}.news{width: 160px}.news-scroll a{text-decoration: none}.dot{height: 6px;width: 6px;margin-left: 3px;margin-right: 3px;margin-top: 2px !important;background-color: rgb(207,23,23);border-radius: 50%;display: inline-block}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Absolute Center Spinner */
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Transparent Overlay */
+  .loading:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  /* :not(:required) hides these rules from IE9 and below */
+  .loading:not(:required) {
+    /* hide "loading..." text */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .loading:not(:required):after {
+    content: '';
+    display: block;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    -webkit-animation: spinner 1500ms infinite linear;
+    -moz-animation: spinner 1500ms infinite linear;
+    -ms-animation: spinner 1500ms infinite linear;
+    -o-animation: spinner 1500ms infinite linear;
+    animation: spinner 1500ms infinite linear;
+    border-radius: 0.5em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+    box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  }
+  
+  /* Animation */
+
+
+
+/* Menu section started from here*/
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* SEARCH BOX  */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(153, 138, 138); /* Fallback color */
+    background-color: rgba(250, 15, 15, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #d51616;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
