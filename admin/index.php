@@ -45,7 +45,6 @@
                             if(empty($_POST['username']) || empty($_POST['password'])){
                               echo '<div class="alert alert-danger">All Fields must be entered.</div>';
                               die();
-                              
                             }else{
                               $username = mysqli_real_escape_string($conn, $_POST['username']);
                               $password = md5($_POST['password']);
@@ -64,7 +63,7 @@
 
                                   header("Location: {$hostname}/admin/post.php");
                                 }
-                                  index.code.logic viewport port:8080 
+                                  
                               }else{
                               echo '<div class="alert alert-danger">Username and Password are not matched.</div>';
                             }
